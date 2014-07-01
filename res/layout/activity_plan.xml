@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapsView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/btnPlanRoute1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="获取驾车路线" />
+
+    <Button
+        android:id="@+id/btnPlanRoute2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnPlanRoute1"
+        android:layout_alignParentLeft="true"
+        android:text="获取公交路线" />
+
+    <Button
+        android:id="@+id/btnPlanRoute3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnPlanRoute2"
+        android:layout_alignParentLeft="true"
+        android:text="获取步行路线" />
+
+</RelativeLayout>
